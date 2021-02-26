@@ -41,11 +41,7 @@ app.get('/api/posts', verifyToken, (req, res) => {
 
    
 app.post('/api/login', (req, res) => {
-    const admin = {
-        id: 1, 
-        adminname: 'kalyani',
-        email: 'my@gmail.com'
-      }
+    const admin = {}
 
     jwt.sign({admin}, 'secretkey', { expiresIn: '50s' }, (err, token) => {
         res.json({
