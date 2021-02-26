@@ -1,0 +1,17 @@
+{
+  "name": "authapi",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^5.11.18"
+  }
+}
